@@ -8,5 +8,5 @@ public sealed record IssuesTypedEvent : IssuesEvent
     public override string Action => IssuesAction.Typed;
 
     [JsonPropertyName("type")]
-    public IssueType? Type { get; init; }
+    public IssueType Type { get; init; } = null!;
 }
